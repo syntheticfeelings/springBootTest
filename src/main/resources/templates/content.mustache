@@ -1,0 +1,209 @@
+<!doctype html>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+html,body {
+    height: 100%;
+}
+body{
+    display: block;
+    /*align-items: center;*/
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #f5f5f5;
+    font-family:"Raleway";
+    font-weight: 300;
+    font-size: 20px;
+    color: #1b1e21;
+
+}
+/*sing in website*/
+.form-signit {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px;
+    margin: auto;
+    box-sizing: border-box;
+
+}
+/*list check in*/
+.list-group{
+    list-style: none;
+}
+/* navigation*/
+.main-nav ul{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: repeat(4, 1fr);
+}
+.main-nav a{
+    background: #f5f5f5;
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: #383d41;
+    text-transform: uppercase;
+    font-size: 15px;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+    border-radius: 5px;
+}
+.main-nav a:hover{
+    background: #696e72;
+    color: #f5f5f5;
+}
+/* menu goods*/
+#menu {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    list-style: none;
+    width: 400px;
+    height: 80%;
+    margin-left: 20px;
+    box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 30px;
+}
+#menu .list a{
+    text-decoration: none;
+}
+#menu li{
+    margin-top: 2px;
+}
+#menu span{
+    cursor: pointer;
+}
+.content{
+    /*display: grid;*/
+    /*grid-template-rows: 250px 250px 250px;*/
+    /*grid-template-columns: 250px 250px 250px;*/
+    /*grid-gap: 10px;*/
+    /*height: 80%;*/
+    /*width: 65%;*/
+    /*float: right;*/
+    /*margin-right: 15px;*/
+    /*object-fit: cover;*/
+    /*box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);*/
+    /*-webkit-box-shadow: 0px 0px 5px 0px rgba(50, 50, 50, 0.4);*/
+    /*border-radius: 5px;*/
+    /*list-style: none;*/
+}
+.good{
+
+    width: 100%;
+    height: 80%;
+}
+</style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="Bootstrap/css/font-awesome.min.css">
+    <link rel="stylesheet" href="templates/style.css">
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <title>Market Drive</title>
+</head>
+<body>
+    <div>
+        <form action="/logout" method="post">
+            <input type="submit" value="Sign Out"/>
+        </form>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <nav class="navbar navbar-expand-lg">
+                <h1 class="h2">Market Drive</h1>
+                <form class="form-inline my-2 my-lg-0">
+                    <input type="search" class="form-control m-sm-2" placeholder="Найти товар" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Найти</button>
+                </form>
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Настройки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Выход</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="content.html">Каталог товаров</a>
+                </li>
+                <li>
+                    <a href="#">История</a>
+                </li>
+                <li>
+                    <a href="#">Шаблоны</a>
+                </li>
+                <li>
+                    <a href="#">Затраты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+    <ul id="menu">
+        <li class="list">
+            <span>Продукты питания</span>
+            <ul>
+                <li id="milk"><a href="#">Молочные изделия</a></li>
+                <li id="grocery"><a href="#">Бакалея</a></li>
+                <li id="hotDrinks"><a href="#">Кофе,чай</a></li>
+                <li id="meat"><a href="#">Мясная гастрономия</a></li>
+                <li id="fish"><a href="#">Рыбные продукты</a></li>
+                <li id="snacks"><a href="#">Снеки</a></li>
+                <li id="drink"><a href="#">Напитки</a></li>
+                <li id="sauce"><a href="#">Соусы,масло</a></li>
+                <li id="frozen"><a href="#">Замороженные продукты</a></li>
+                <li id="sweets"><a href="#">Сладости</a></li>
+            </ul>
+        </li>
+        <li class="list">
+            <span>Товары для животных</span>
+            <ul>
+                <li id="foodAnimals"><a href="#">Еда для животных</a></li>
+                <li id="toiletAnimals"><a href="#">Средства для ухода за животными</a></li>
+            </ul>
+        </li>
+        <li class="list">
+            <span>Средства по уходу</span>
+            <ul>
+                <li id="care"><a href="#">Гигиенические стредсва</a></li>
+            </ul>
+        </li>
+        <li class="list">
+            <span>Товары для дома и семьи</span>
+            <ul>
+                <li id="goodsHome"><a href="#">Товары для дома</a></li>
+                <li id="clothes"><a href="#">Одежда</a></li>
+            </ul>
+        </li>
+    </ul>
+    <section class="good">
+        <ul id="result">
+
+        </ul>
+    </section>
+
+
+
+
+    <!--<script type="text/javascript" src="nav-menu.js"></script>-->
+    <!--<script type="text/javascript" src="loadGoods.js"></script>-->
+    <script type="text/javascript" src="showGoods.js"></script>
+</body>
+</html>
