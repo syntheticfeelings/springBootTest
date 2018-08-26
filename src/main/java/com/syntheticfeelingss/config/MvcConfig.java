@@ -1,4 +1,4 @@
-package com.example.sweater.config;
+package com.syntheticfeelingss.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;

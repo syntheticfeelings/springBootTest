@@ -1,4 +1,4 @@
-package com.example.sweater.domain;
+package com.syntheticfeelingss.domain;
 
 import javax.persistence.*;
 

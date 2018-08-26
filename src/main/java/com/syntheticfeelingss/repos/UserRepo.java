@@ -1,6 +1,6 @@
-package com.example.sweater.repos;
+package com.syntheticfeelingss.repos;
 
-import com.example.sweater.domain.User;
+import com.syntheticfeelingss.domain.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepo extends JpaRepository<User, Long> {
